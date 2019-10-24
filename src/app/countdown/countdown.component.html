@@ -1,0 +1,11 @@
+<h3>Time setting</h3>
+
+<button (click)="start()">Start</button>
+<button (click)="stop()">Stop</button>
+<button (click)="reset()">Reset</button>
+<br>
+<label>
+  <input type="number" [value]="setTheTime" (change)="onchange($event.target.value)">
+</label>
+<br>
+<h1 style="margin-left: 50px; background-color: aqua;display: inline">{{runTime}}</h1>
